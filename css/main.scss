@@ -1,0 +1,215 @@
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.navWrapper {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapperTwo {
+}
+
+.top {
+    background: #f1f1f1;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+    padding: 15px 20px 0 15px;
+}
+
+.headerBar {
+    color: #d93025;
+    font-size: 20px;
+    padding: 25px 45px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.fieldBar {
+    margin: 40px 2% 0 45px;
+}
+
+.inputWrapper {
+    display: flex;
+}
+
+.left {
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.right {
+    display: inline-block;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+    input[type="text"] {
+        border-radius: 1px;
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid #c0c0c0;
+        font-size: 13px;
+        height: 25px;
+        padding: 1px 8px;
+        width: calc(100% - 16px);
+    }
+    input:focus {
+        outline: none;
+    }
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#advancedSubmit {
+    border: 1px solid #3079ed;
+    color: #fff;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+}
+
+// h2 {
+//     color: #d93025;
+//     font-size: 20px;
+// }
+
+.logo {
+    img {
+        width: 270px;
+        padding-top: 8rem;
+    }
+}
+
+.searchBarWrapper {
+    width: 582px;
+    margin-top: 1.5rem;
+}
+
+.searchBar {
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.searchBar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.search {
+    padding-right: 13px;
+    img {
+        width: 1rem;
+    }
+}
+
+.theForm {
+    width: 90%;
+    input {
+        width: 100%;
+        border: none;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 1rem;
+    }
+    input:focus {
+        outline: none;
+    }
+}
+
+.closer {
+    display: none;
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.87);
+    color: white;
+    padding: 0.5rem 1rem;
+    left: -31px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    top: 40px;
+    display: none;
+}
+
+.triangle {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.87);
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    transform: rotate(45deg);
+}
+
+input[type="submit"] {
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+#submitRow {
+    margin-top: 1.5rem;
+}
+
+// .closer::after {
+//     content: "delete";
+//     position: absolute;
+//     width: 3rem;
+//     height: 1rem;
+//     background: grey;
+// }

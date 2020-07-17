@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="row nav">
+                <div class="navWrapper">
+                    <a href="./index.html">Google Search</a>
+                    <a href="./advancedsearch.html">Advanced Search</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="logo">
+                    <img src="./img/1920px-Google_2015_logo.svg.png" alt="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="searchBarWrapper">
+                    <div class="searchBar">
+                        <div class="search">
+                            <img src="./ic_search_24px.svg" alt="" />
+                        </div>
+                        <div class="theForm">
+                            <form
+                                action="https://google.com/search"
+                                name="google"
+                                id="google"
+                            >
+                                <input id="searchInput" type="text" name="q" />
+                                <input type="hidden" name="tbm" value="isch" />
+                            </form>
+                        </div>
+                        <div class="closer" id="closer">
+                            <img src="./ic_clear_24px.svg" alt="" />
+                            <div class="tooltip" id="tooltip">
+                                <div class="triangle"></div>
+                                delete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="submitRow">
+                <input form="google" type="submit" value="Google Search" />
+                <input form="google" type="submit" value="I'm feeling lucky" />
+            </div>
+        </div>
+    </body>
+</html>
